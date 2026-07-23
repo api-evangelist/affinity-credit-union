@@ -1,0 +1,52 @@
+aid: affinity-credit-union
+url: https://raw.githubusercontent.com/api-evangelist/affinity-credit-union/refs/heads/main/apis.yml
+name: Affinity Credit Union
+kind: company
+description: >-
+  Affinity Credit Union is a member-owned financial cooperative headquartered in
+  Saskatoon, Saskatchewan, Canada. Formed in 2005 through the amalgamation of
+  several Saskatchewan credit unions, it is the largest credit union in
+  Saskatchewan and among the ten largest in Canada, with roughly CAD 9.6 billion
+  in managed assets and a province-wide branch and advice-centre network serving
+  personal and business members. As a provincially regulated cooperative under
+  its "Banking on Values" mandate, members democratically own and govern the
+  institution. Affinity exposes NO first-party public developer API or developer
+  portal; digital and core banking are delivered through banking-technology
+  providers (the credit-union system's Central 1 rails), and third-party consumer
+  data access today is aggregator/screen-scraping based. Affinity is a stated
+  supporter of the credit-union-system "Open Banking Solution" delivered by
+  Caspian One under the Large Credit Union Coalition, positioning it for Canada's
+  legislated-but-not-yet-operational Consumer-Driven Banking framework (FCAC).
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+tags:
+- Financial Services
+- Banking
+- Canada
+- Credit Union
+- Cooperative
+- Saskatchewan
+- Consumer-Driven Banking
+- Open Banking
+- Data Aggregation
+created: '2026-07-23'
+modified: '2026-07-23'
+specificationVersion: '0.19'
+apis: []
+common:
+- type: Website
+  url: https://www.affinitycu.ca/
+- type: Support
+  url: https://www.affinitycu.ca/contact-us/
+- type: PrivacyPolicy
+  url: https://www.affinitycu.ca/privacy/policy
+- type: TermsOfService
+  url: https://www.affinitycu.ca/legal
+- type: Security
+  url: https://www.affinitycu.ca/security
+- type: Blog
+  url: https://www.affinitycu.ca/meet-affinity/news
+- type: LinkedIn
+  url: https://ca.linkedin.com/company/affinity-credit-union
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

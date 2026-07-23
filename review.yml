@@ -1,0 +1,84 @@
+aid: affinity-credit-union
+name: Affinity Credit Union
+review:
+  question: Does Affinity Credit Union expose a first-party public developer API or downloadable API specification?
+  answer: false
+  date: '2026-07-23'
+  reviewer: API Evangelist
+findings:
+  summary: |
+    Affinity Credit Union publishes no first-party public developer API, no
+    developer portal, and no downloadable OpenAPI/Swagger specification.
+    Probes of developer.affinitycu.ca, developers.affinitycu.ca, and
+    api.affinitycu.ca did not resolve (connection failed, HTTP 000). Only the
+    member-facing marketing and online-banking site at www.affinitycu.ca is
+    live (HTTP 200). No API reference, no OAuth2/OIDC authorization server, no
+    mTLS/FDX data-access endpoint, and no API key onboarding flow are
+    documented anywhere on the public site. This is the honest, expected
+    posture for a provincially regulated Canadian credit-union cooperative of
+    this size.
+  charter: Provincially regulated member-owned cooperative (credit union), Saskatchewan; not a Schedule I/II bank.
+  authModel: none-published
+  specProvenance: none — no OpenAPI/Swagger/Postman collection is publicly downloadable.
+  firstPartyDeveloperPortal: false
+  downloadableSpecs: false
+  fdxParticipant: false
+  section1033Posture: n/a — U.S. Dodd-Frank 1033 does not apply; Canada uses the Consumer-Driven Banking framework.
+  consumerDrivenBankingPosture: |
+    Canada's federal Consumer-Driven Banking framework (Budget 2024 and Fall
+    Economic Statement 2024, overseen by the Financial Consumer Agency of
+    Canada / FCAC) is legislated but NOT yet operational. Affinity is a stated
+    supporter of the credit-union-system "Open Banking Solution" being
+    delivered by Caspian One under the Large Credit Union Coalition (alongside
+    First West, Prospera, Meridian, Libro and others), positioning it for the
+    coming framework. No production CDB/FDX endpoint is published today.
+  aggregatorPosture: |
+    Third-party consumer data access today is aggregator / screen-scraping
+    based (e.g. Flinks, Plaid, MX, Salt Edge), not a first-party data-sharing
+    API. Core and digital banking are delivered through the credit-union
+    system's banking-technology rails (Central 1).
+  railsPosture: |
+    No documented first-party API around Interac (e-Transfer / verification)
+    or the Payments Canada Real-Time Rail (RTR); participation is via the
+    shared credit-union system infrastructure, not a public Affinity API.
+  transports:
+    - protocol: REST
+      scheme: https
+      documented: false
+      note: No public REST API surface is documented for Affinity Credit Union.
+    - protocol: OAuth2/OIDC
+      documented: false
+      note: No public authorization server or developer onboarding is published.
+  probes:
+    - url: https://developer.affinitycu.ca
+      status: 000
+      note: Did not resolve / connection failed — no developer portal.
+    - url: https://developers.affinitycu.ca
+      status: 000
+      note: Did not resolve / connection failed.
+    - url: https://api.affinitycu.ca
+      status: 000
+      note: Did not resolve / connection failed.
+    - url: https://www.affinitycu.ca
+      status: 200
+      note: Live member-facing marketing and online-banking site; no developer/API references in navigation or footer.
+sources:
+  - url: https://www.affinitycu.ca/
+    type: Website
+    note: Member-facing site; "Banking on Values"; no developer/API content.
+  - url: https://en.wikipedia.org/wiki/Affinity_Credit_Union
+    type: Reference
+    note: Largest credit union in Saskatchewan, ~CAD 9.6B managed assets, formed 2005.
+  - url: https://www.openbankingexpo.com/news/five-canadian-credit-unions-partner-with-caspian-one/
+    type: Reference
+    note: Affinity among credit unions supporting the Caspian One Credit Union System Open Banking Solution.
+  - url: https://www.central1.com/in_the_news/central-1-supports-the-credit-union-system-open-banking-solution-provided-by-caspian-one/
+    type: Reference
+    note: Central 1 (credit-union system rails) supports the Caspian One open-banking solution.
+actions:
+  apisYmlUpdated: true
+  openapiHarvested: false
+  reason: |
+    No public API surface exists, so apis[] is empty. The record is an honest
+    identity-only profile with verified website/legal/social pointers in
+    common[]. No spec was harvested because none is publicly downloadable.
