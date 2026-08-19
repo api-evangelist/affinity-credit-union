@@ -31,7 +31,7 @@ tags:
 created: '2026-07-23'
 modified: '2026-07-23'
 # enrichment round 2026-07-23: domain-security probed (TLS1.3/HSTS/DNSSEC/CAA/SPF/DMARC-reject); no first-party API/OpenAPI/well-known/MCP surface exists.
-specificationVersion: '0.19'
+specificationVersion: '0.23'
 apis: []
 common:
 - type: DomainSecurity
