@@ -42,7 +42,7 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
-- Financial-Services
+- Financial Services
 - Banking
 - Canada
 - Credit Union
@@ -50,7 +50,6 @@ tags:
 - Saskatchewan
 - Consumer-Driven Banking
 - Open Banking
-- Data Aggregation
 tags_raw:
 - Financial Services
 - Banking
@@ -60,7 +59,7 @@ tags_raw:
 - Saskatchewan
 - Consumer-Driven Banking
 - Open Banking
-- Data Aggregation
+- Financial-Services
 created: '2026-07-23'
 modified: '2026-07-23'
 # enrichment round 2026-07-23: domain-security probed (TLS1.3/HSTS/DNSSEC/CAA/SPF/DMARC-reject); no first-party API/OpenAPI/well-known/MCP surface exists.
@@ -86,3 +85,5 @@ common:
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
+x-tags-removed:
+- Data Aggregation
