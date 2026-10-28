@@ -64,50 +64,84 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Affinity Credit Union is a member-owned financial cooperative headquartered in
-Saskatoon, Saskatchewan, Canada. Formed in 2005 through the amalgamation of
-several Saskatchewan credit unions, it is the largest credit union in
-Saskatchewan and among the ten largest in Canada, with roughly CAD 9.6 billion
-in managed assets. Operating under a "Banking on Values" mandate, Affinity
-provides personal and business banking, lending, mortgages, and investment
-services across a province-wide network, and is democratically owned and
-governed by its members.
+Affinity Credit Union is a member-owned financial cooperative headquartered in Saskatoon, Saskatchewan, Canada. Formed in 2005 through the amalgamation of several Saskatchewan credit unions, it is the largest credit union in Saskatchewan and among the ten largest in Canada, with roughly CAD 9.6 billion in managed assets and a province-wide branch and advice-centre network serving personal and business members. As a provincially regulated cooperative under its "Banking on Values" mandate, members democratically own and govern the institution. Affinity exposes NO first-party public developer API or developer portal; digital and core banking are delivered through banking-technology providers (the credit-union system's Central 1 rails), and third-party consumer data access today is aggregator/screen-scraping based. Affinity is a stated supporter of the credit-union-system "Open Banking Solution" delivered by Caspian One under the Large Credit Union Coalition, positioning it for Canada's legislated-but-not-yet-operational Consumer-Driven Banking framework (FCAC).
 
-## Open Finance & API Posture
+**Areas:** Financial Services · Banking · Canada · Credit Union · Cooperative · Saskatchewan · Consumer-Driven Banking · Open Banking
 
-Affinity Credit Union exposes **no first-party public developer API and runs no
-developer portal.** Probes of `developer.affinitycu.ca`, `developers.affinitycu.ca`,
-and `api.affinitycu.ca` did not resolve; only the member-facing marketing and
-online-banking site at `www.affinitycu.ca` is live. This is the normal, honest
-posture for a Canadian credit union of this size.
+## Affinity Credit Union on APIs.io
 
-- **Charter / ownership.** Provincially regulated member-owned cooperative
-  (credit union), not a Schedule I/II bank.
-- **Core & digital banking.** Delivered through the credit-union system's
-  banking-technology rails (Central 1), not a self-built public API.
-- **Consumer data access today.** Third-party access is aggregator /
-  screen-scraping based (e.g. Flinks, Plaid, MX, Salt Edge), not a first-party
-  data-sharing API.
-- **Consumer-Driven Banking (CDB).** Canada's federal Consumer-Driven Banking
-  framework (Budget 2024 / Fall Economic Statement 2024, overseen by the
-  Financial Consumer Agency of Canada, FCAC) is legislated but **not yet
-  operational.** Affinity is a stated supporter of the credit-union-system
-  "Open Banking Solution" being delivered by Caspian One under the Large Credit
-  Union Coalition, positioning it for that coming framework. No CDB/FDX
-  production endpoint is published.
-- **Rails.** No documented first-party API around Interac or the Payments Canada
-  Real-Time Rail (RTR); participation is via the shared credit-union system.
+Everything profiled for Affinity Credit Union is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/affinity-credit-union/](https://apis.io/providers/affinity-credit-union/)** — or go straight to one of the APIs or properties below.
 
-## Links
+### Published properties
 
-- Website: https://www.affinitycu.ca/
-- Support / Contact: https://www.affinitycu.ca/contact-us/
-- Security: https://www.affinitycu.ca/security
-- Privacy Policy: https://www.affinitycu.ca/privacy/policy
-- Legal / Terms: https://www.affinitycu.ca/legal
-- News: https://www.affinitycu.ca/meet-affinity/news
-- LinkedIn: https://ca.linkedin.com/company/affinity-credit-union
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## Maintainers
+#### Security (1)
 
-- Kin Lane — kin@apievangelist.com
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Affinity Credit Union Domain Security](https://apis.io/security/affinity-credit-union/affinity-credit-union-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.affinitycu.ca/)
+- [Support](https://www.affinitycu.ca/contact-us/)
+- [Blog](https://www.affinitycu.ca/meet-affinity/news)
+- [Security](https://www.affinitycu.ca/security)
+- [Terms of service](https://www.affinitycu.ca/legal)
+- [Privacy policy](https://www.affinitycu.ca/privacy/policy)
+
+## API Evangelist rating
+
+**Kin Score 10.4** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 21.1 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 11.0** — Banking & Open Finance
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/affinity-credit-union/](https://apis.io/providers/affinity-credit-union/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Affinity Credit Union: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/affinity-credit-union/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
